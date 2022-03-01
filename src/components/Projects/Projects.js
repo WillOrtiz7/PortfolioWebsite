@@ -41,6 +41,10 @@ const Projects = () => (
               ))}
             </TagList>
           </div>
+          <UtilityList>
+            <ExternalLinks href={project.source}>View on GitHub</ExternalLinks>
+            <ExternalLinks href={project.visit}>View Project</ExternalLinks>
+          </UtilityList>
         </BlogCard>
       ))}
     </GridContainer>

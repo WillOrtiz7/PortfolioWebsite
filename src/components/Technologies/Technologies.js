@@ -4,10 +4,13 @@ import {
   DiReact,
   DiHtml5,
   DiPython,
-  DiNodejs,
+  DiMongodb,
+  DiAngularSimple,
   DiNodejsSmall,
+  
 } from "react-icons/di";
 import { FiFigma } from "react-icons/fi";
+import { SiAdobexd } from "react-icons/si"
 import {
   Section,
   SectionDivider,
@@ -33,37 +36,41 @@ const Technologies = () => (
     </SectionText>
     <List>
       <ListItem>
-        <DiReact size="3rem" />
+        <div>
+          <DiReact size="3rem" />
+          <DiAngularSimple size="3rem" />
+        </div>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
+            React.js and Angular.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <div>
-          <DiJava size="3rem" />
-          <DiPython size="3rem" />
+          <DiMongodb size="3rem" />
           <DiNodejsSmall size="3rem" />
         </div>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Java, Python, <br />
-            Node.js, and C#
+            MongoDB and Node.js <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <FiFigma size="3rem" />
+        <div>
+          <FiFigma size="3rem" />
+          <SiAdobexd size ="3rem" />
+        </div>
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Figma
+            Figma and Adobe XD
           </ListParagraph>
         </ListContainer>
       </ListItem>

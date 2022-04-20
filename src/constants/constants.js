@@ -1,10 +1,20 @@
 export const projects = [
   {
+    title: "Soundlink",
+    description:
+      "A mobile app made for users to share their musical taste and connect with friends around the world.",
+    image: "/images/soundlinkportfolio.png",
+    tags: ["React Native", "MongoDB", "Node", "Express"],
+    id: 3,
+    source: "https://github.com/Coolperson/largeproject",
+    visit: "https://willortiz7.com/",
+  },
+  {
     title: "GridironHub",
     description:
-      "A website and discord bot combo made for users in a Madden NFL 22 community. Includes features such as game of the week voting.",
-    image: "/images/4.png",
-    tags: ["Angular", "MongoDB", "Express", "Node", "Discord.js"],
+      "A discord bot made for users in a Madden NFL 22 community. Includes features such as game of the week voting.",
+    image: "/images/gridironhub.png",
+    tags: ["MongoDB", "Express", "Node", "Discord.js"],
     source: "https://github.com/WillOrtiz7/GameOfTheWeek",
     visit: "https://willortiz7.com/",
     id: 0,
@@ -29,21 +39,11 @@ export const projects = [
     source: "https://github.com/NaderUniverse/Universe",
     visit: "https://willortiz7.com/",
   },
-  {
-    title: "Portfolio Website",
-    description:
-      "This is the site that you are currently viewing, the intention of this site is to display my  capabilities and share a  little bit about myself.",
-    image: "/images/2.png",
-    tags: ["React"],
-    id: 3,
-    source: "https://github.com/WillOrtiz7/PortfolioWebsite",
-    visit: "https://willortiz7.com/",
-  },
 ];
 
 export const TimeLineData = [
-  { year: 2018, text: "Enrolled at University of Central Florida", },
-  { year: 2019, text: "Started a PC building business", },
-  { year: 2020, text: "Began working as an undergraduate researcher", },
-  { year: 2021, text: "Worked on various personal projects", }
+  { year: 2018, text: "Enrolled at University of Central Florida" },
+  { year: 2019, text: "Started a PC building business" },
+  { year: 2020, text: "Began working as an undergraduate researcher" },
+  { year: 2021, text: "Worked on various personal projects" },
 ];

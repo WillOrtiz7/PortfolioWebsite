@@ -7,7 +7,7 @@ export const projects = [
     tags: ["React Native", "MongoDB", "Node", "Express"],
     id: 3,
     source: "https://github.com/Coolperson/largeproject",
-    visit: "https://willortiz7.com/",
+    visit: "https://soundlink.app/",
   },
   {
     title: "GridironHub",

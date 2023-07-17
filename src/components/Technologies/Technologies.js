@@ -1,23 +1,14 @@
 import React from "react";
-import {
-  DiJava,
-  DiReact,
-  DiHtml5,
-  DiPython,
-  DiMongodb,
-  DiAngularSimple,
-  DiNodejsSmall,
-  
-} from "react-icons/di";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { DiMongodb, DiNodejsSmall, DiReact } from "react-icons/di";
 import { FiFigma } from "react-icons/fi";
-import { SiAdobexd } from "react-icons/si"
+import { SiAdobexd } from "react-icons/si";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { Div1 } from "../Header/HeaderStyles";
 import {
   List,
   ListContainer,
@@ -38,13 +29,13 @@ const Technologies = () => (
       <ListItem>
         <div>
           <DiReact size="3rem" />
-          <DiAngularSimple size="3rem" />
+          <BiLogoTailwindCss size="3rem" />
         </div>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js and Angular.js
+            React.js and Tailwind CSS
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -64,7 +55,7 @@ const Technologies = () => (
       <ListItem>
         <div>
           <FiFigma size="3rem" />
-          <SiAdobexd size ="3rem" />
+          <SiAdobexd size="3rem" />
         </div>
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>

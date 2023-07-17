@@ -1,5 +1,12 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
+import { TimeLineData } from "../../constants/constants";
+import {
+  Section,
+  SectionDivider,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
 import {
   CarouselButton,
   CarouselButtonDot,
@@ -11,13 +18,6 @@ import {
   CarouselItemTitle,
   CarouselMobileScrollNode,
 } from "./TimeLineStyles";
-import {
-  Section,
-  SectionDivider,
-  SectionText,
-  SectionTitle,
-} from "../../styles/GlobalComponents";
-import { TimeLineData } from "../../constants/constants";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -67,8 +67,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I am a Junior Computer Science student who enjoys putting my creativity
-        and knowledge to work.
+        I am a developer who enjoys putting my creativity and knowledge to work.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

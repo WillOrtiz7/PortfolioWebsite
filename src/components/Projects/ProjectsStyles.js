@@ -85,6 +85,9 @@ export const UtilityList = styled.ul`
 export const ExternalLinks = styled.a`
   color: #d4c0c0;
   font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem 1.5rem;
   background: #6b3030;
   border-radius: 15px;

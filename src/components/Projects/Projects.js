@@ -1,5 +1,11 @@
 import React from "react";
 
+import { projects } from "../../constants/constants";
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
 import {
   BlogCard,
   CardInfo,
@@ -7,18 +13,14 @@ import {
   GridContainer,
   HeaderThree,
   Hr,
+  Img,
   Tag,
   TagList,
   TitleContent,
   UtilityList,
-  Img,
 } from "./ProjectsStyles";
-import {
-  Section,
-  SectionDivider,
-  SectionTitle,
-} from "../../styles/GlobalComponents";
-import { projects } from "../../constants/constants";
+
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Projects = () => (
   <Section nopadding id="projects">
@@ -42,8 +44,20 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={project.source}>View on GitHub</ExternalLinks>
-            <ExternalLinks href={project.visit}>View Project</ExternalLinks>
+            {!project.source ? (
+              <ExternalLinks>
+                Private Repository <FaGithub size={20} />
+              </ExternalLinks>
+            ) : (
+              <ExternalLinks href={project.source}>
+                View on GitHub
+                <FaGithub size={20} />
+              </ExternalLinks>
+            )}
+
+            <ExternalLinks href={project.visit}>
+              View Project <FaExternalLinkAlt size={20} />
+            </ExternalLinks>
           </UtilityList>
         </BlogCard>
       ))}
